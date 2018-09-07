@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true}))
 app.set('views', 'app/views');
 app.set('view engine', 'ejs');
 
-var posts = require('./app/routes/routes');
+var posts = require('./app/routes');
 
 app.use('/post', posts);
 
